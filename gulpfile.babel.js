@@ -44,20 +44,20 @@ export const paths = {
             './src/static/img/**/*.{jpg,jpeg,png,gif,svg}',
         ],
         webp: './src/static/img/**/*.{jpg,jpeg,png}',
-        critical: './dist/*.html',
+        critical: `./${config.buildPath}/*.html`,
     },
     build: {
-        clean: ['./dist/*'],
-        general: './dist/',
-        static: './dist/assets/',
-        styles: './dist/assets/css/',
-        scripts: './dist/assets/js/',
+        clean: [`./${config.buildPath}/*`],
+        general: `./${config.buildPath}/`,
+        static: `./${config.buildPath}/assets/`,
+        styles: `./${config.buildPath}/assets/css/`,
+        scripts: `./${config.buildPath}/assets/js/`,
 
-        images: './dist/assets/img/',
-        webp: './dist/assets/img/',
-        sprites: './dist/assets/css/img/sprites/',
-        iconfont: './dist/assets/css/fonts/',
-        critical: './dist/assets/css/critical/',
+        images: `./${config.buildPath}/assets/img/`,
+        webp: `./${config.buildPath}/assets/img/`,
+        sprites: `./${config.buildPath}/assets/css/img/sprites/`,
+        iconfont: `./${config.buildPath}/assets/css/fonts/`,
+        critical: `./${config.buildPath}/assets/css/critical/`,
     }
 };
 
